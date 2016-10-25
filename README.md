@@ -8,6 +8,6 @@ Tag Manager SDK
 
 ## Change Log
 
-04/22/2016 - v1.0.0
+10/25/2016 - v0.1.0
 
-* initial release
+* Initial release

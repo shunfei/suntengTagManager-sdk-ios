@@ -1,0 +1,101 @@
+{
+  "owner": 1,
+  "projectId": 283,
+  "projectName": "我的iOS Github demo",
+  "containerId": 10493,
+  "containerType": 1,
+  "versionId": 1,
+  "versionName": "v1",
+  "tags": [
+    {
+      "id": 1,
+      "name": "CustomFunctionCallTag",
+      "type": "FUNC_CALL",
+      "liveOnly": false,
+      "funcCall": {
+        "name": "customFunctionNameB",
+        "parameters": [
+          {
+            "key": "key1",
+            "value": "value1"
+          },
+          {
+            "key": "key2",
+            "value": "value2"
+          }
+        ]
+      },
+      "firingTriggerIds": [
+        "1"
+      ],
+      "blockingTriggerIds": [
+        
+      ]
+    }
+  ],
+  "triggerMap": {
+    "1": {
+      "id": "1",
+      "name": "RuleA",
+      "type": "CUSTOM_EVENT",
+      "filters": [
+        {
+          "macroName": "{{CustomEvent}}",
+          "condition": "EQUALS",
+          "value": "myCustomEvent"
+        }
+      ]
+    }
+  },
+  "macroMap": {
+    "{{App ID}}": {
+      "name": "{{App ID}}",
+      "type": "APP_ID"
+    },
+    "{{App Name}}": {
+      "name": "{{App Name}}",
+      "type": "APP_NAME"
+    },
+    "{{App Version}}": {
+      "name": "{{App Version}}",
+      "type": "APP_VERSION"
+    },
+    "{{Container ID}}": {
+      "name": "{{Container ID}}",
+      "type": "CONTAINER_ID"
+    },
+    "{{CustomEvent}}": {
+      "name": "{{CustomEvent}}",
+      "type": "CUSTOM_EVENT"
+    },
+    "{{CustomFunctionMacro}}": {
+      "name": "{{CustomFunctionMacro}}",
+      "type": "FUNC_CALL",
+      "funcCall": {
+        "name": "customFunctionNameA",
+        "parameters": [
+          {
+            "key": "keyA",
+            "value": "valueA"
+          },
+          {
+            "key": "keyB",
+            "value": "valueB"
+          }
+        ]
+      }
+    },
+    "{{Device Name}}": {
+      "name": "{{Device Name}}",
+      "type": "DEVICE_NAME"
+    },
+    "{{SDK Version}}": {
+      "name": "{{SDK Version}}",
+      "type": "SDK_VERSION"
+    },
+    "{{容器版本 ID}}": {
+      "name": "{{容器版本 ID}}",
+      "type": "VERSION_ID"
+    }
+  }
+}
